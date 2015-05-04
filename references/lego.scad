@@ -91,29 +91,38 @@ module plate(col, row) {
 }
 
 
-// let's build some parts!
-brick(2);
+// Testing
+echo("##########");
+echo("In lego.scad");
+echo("This file should not be included, use ''use <filemane>'' instead.");
+echo("##########");
 
-translate([-20, 0, 0])
-plate(1,1);
+p = 1;
+if (p==1) {
+  // let's build some parts!
+  brick(2);
 
-translate([-20, 10, 0])
-beam(1);
+  translate([-20, 0, 0])
+  plate(1,1);
 
-translate([20, 0, 0])
-brick(4);
+  translate([-20, 10, 0])
+  beam(1);
 
-translate([0, 20, 0])
-beam(5);
+  translate([20, 0, 0])
+  brick(4);
 
-translate([0, 30, 0])
-plate(2, 2);
+  translate([0, 20, 0])
+  beam(5);
 
-translate([0, -70, 0])
-plate(10, 8);
+  translate([0, 30, 0])
+  plate(2, 2);
 
-translate([-10, 0, 0])
-plate(1, 10);
+  translate([0, -70, 0])
+  plate(10, 8);
 
-translate([-40, -40, 0])
-plate(3, 5);
+  translate([-10, 0, 0])
+  plate(1, 10);
+
+  translate([-40, -40, 0])
+  plate(3, 5);
+}

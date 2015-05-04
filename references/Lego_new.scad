@@ -1,4 +1,4 @@
-include <Lego dimensions.scad>;
+include <Lego_dimensions.scad>;
 
 Kontaktstelle=0.6;
 
@@ -46,7 +46,7 @@ mirror([0,1,0]){
 	}
 }
 
-if(X==1 && Y>1) // Wenn X=1 und Y>1 
+if(X==1 && Y>1) // Wenn X=1 und Y>1
 	InnenZyl1(Y-1, H);
 
 if(X==2 && Y>=1) //Nur bei 2x2 Steinen
@@ -128,4 +128,3 @@ mirror([1,0,0]){
 	cube([4, Inner_cyl2_wall, plate_h*H-3], center=true);
 	}
 }}
-	

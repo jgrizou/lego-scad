@@ -1,11 +1,10 @@
-include <Lego dimensions.scad>
+include <Lego_dimensions.scad>
 
 smooth=50;
 
 // ###################################
 
 KLOTZ(1, 2, 3, Tile=false, Technic=true); //X_Noppen, Y_Noppen, Höhe in Legolayer (*3,2), glatte Fliese=nein/ja, Technikstein =ja/nein)
-
 
 // ###################################
 
@@ -24,7 +23,7 @@ if(Y>=2){
 tech_cyl(Y-1);}
 else {tech_cyl(Y);}
 
-		if(X==1 && Y>1) // Wenn X=1 und Y>1 
+		if(X==1 && Y>1) // Wenn X=1 und Y>1
 			InnenZyl1(Y-1, H);
 		if(Tile==false){
 		NIP_Aussen(X, Y);}
